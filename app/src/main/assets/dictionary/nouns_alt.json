@@ -1,0 +1,548 @@
+{
+    "key": "father",
+    "categories": ["noun.person.family"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "father",
+        "genus": "M"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Vater",
+        "genus": "M",
+        "plural": "Väter"
+      },
+      {
+        "language": "FR",
+        "lexeme": "père",
+        "genus": "M"
+      },
+      {
+        "language": "ES",
+        "lexeme": "padre",
+        "genus": "M"
+      },
+      {
+        "language": "IT",
+        "lexeme": "padre",
+        "genus": "M"
+      },
+      {
+        "language": "DA",
+        "lexeme": "far",
+        "genus": "U"
+      },
+      {
+        "language": "LA",
+        "lexeme": "pater",
+        "genus": "M"
+      }
+    ],
+    "background": "Das Grundwort ist pater (Latein), vgl.paternoster (Vaterunser). Davon sind alle Formen der einzelnen Sprachen abgeleitet, am deutlichsten noch sichtbar im Spanischen, Italienischen und Deutschen (hier mit Lautverschiebung P => V)."
+  },
+  {
+    "key": "mother",
+    "categories": ["noun.person.family"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "mother",
+        "genus": "F"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Mutter",
+        "genus": "F",
+        "plural": "Mütter"
+      },
+      {
+        "language": "FR",
+        "lexeme": "mère",
+        "genus": "F"
+      },
+      {
+        "language": "ES",
+        "lexeme": "madre",
+        "genus": "F"
+      },
+      {
+        "language": "IT",
+        "lexeme": "madre",
+        "genus": "F"
+      },
+      {
+        "language": "DA",
+        "lexeme": "mor",
+        "genus": "U"
+      },
+      {
+        "language": "LA",
+        "lexeme": "mater",
+        "genus": "F"
+      }
+    ],
+    "background": "Das Grundwort ist mater (Latein), analog zum Vater. Alle Formen sind hier analog zum Wort Vater in der jeweiligen Sprache."
+  },
+  {
+    "key": "dad",
+    "categories": ["noun.person.family"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "dad",
+        "genus": "M"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Papa",
+        "genus": "M",
+        "plural": "Papas"
+      },
+      {
+        "language": "FR",
+        "lexeme": "papa",
+        "genus": "M"
+      },
+      {
+        "language": "ES",
+        "lexeme": "papá",
+        "genus": "M"
+      },
+      {
+        "language": "IT",
+        "lexeme": "papà",
+        "genus": "M"
+      },
+      {
+        "language": "DA",
+        "lexeme": "far",
+        "genus": "U"
+      },
+      {
+        "language": "LA",
+        "lexeme": "pater",
+        "genus": "M"
+      }
+    ],
+    "background": "Manche Sprachen haben für Vater/Mutter häufig verwendete Kosenamen. Das Wort dad im Englischen ist unbekannter Herkunft; diskutiert werden manchmal eine Ableitung aus irischen Dialekten oder eine Imitation durch Babysprache (da-da-da). Die romanischen Sprachen und das Deutsche verwenden allesamt den Stamm Papa. Hier ist zu bedenken, dass das Wort Papa in einigen Sprachen auch für Papst steht (Spanisch, Italienisch). Im Spanischen wird das Wort auch regional für die Kartoffel verwendet (Andalusien, Kanaren). Daher findet sich hier die Akzent-Variante für den Vater, mit entsprechend anderer Betonung. Im Italienischen ist der Akzent ebenfalls die einzige Unterscheidung zum Papst. Im Dänischen und Lateinischen finden sich keine prägnanten Kosenamen. "
+  },
+  {
+    "key": "mom",
+    "categories": ["noun.person.family"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "mom",
+        "genus": "F"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Mama",
+        "genus": "F",
+        "plural": "Mamas"
+      },
+      {
+        "language": "FR",
+        "lexeme": "maman",
+        "genus": "F"
+      },
+      {
+        "language": "ES",
+        "lexeme": "mamá",
+        "genus": "F"
+      },
+      {
+        "language": "IT",
+        "lexeme": "mamma",
+        "genus": "F"
+      },
+      {
+        "language": "DA",
+        "lexeme": "mor",
+        "genus": "U"
+      },
+      {
+        "language": "LA",
+        "lexeme": "mater",
+        "genus": "F"
+      }
+    ],
+    "background": "Analog zum Papa gibt es in einigen Sprachen häufig verwendete Kosenamen für die Mutter. In den hier verwendeten Sprachen sind sie gleichermaßen von mater abgeleitet, im Dänischen und Lateinischen gibt es analog zum Papa keine entsprechende Form. Im Spanischen wird der Akzent vermutlich in Analogie zu papá verwendet (eine Dopplung mit einem anderen Wort gibt es hier nicht)."
+  },
+  {
+    "key": "brother",
+    "categories": ["noun.person.family"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "brother",
+        "genus": "M"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Bruder",
+        "genus": "M",
+        "plural": "Brüder"
+      },
+      {
+        "language": "FR",
+        "lexeme": "frère",
+        "genus": "M"
+      },
+      {
+        "language": "ES",
+        "lexeme": "hermano",
+        "genus": "M"
+      },
+      {
+        "language": "IT",
+        "lexeme": "fratello",
+        "genus": "M"
+      },
+      {
+        "language": "DA",
+        "lexeme": "bror",
+        "genus": "U"
+      },
+      {
+        "language": "LA",
+        "lexeme": "frater",
+        "genus": "M"
+      }
+    ],
+    "background": "Bis auf das Spanische sind alle Wörter vom lateinischen frater abgeleitet. Bei den germanischen Sprachen ist die Lautverschiebung F => B gut zu erkennen. Das spanische hermano geht auf eine alte lateinische Form germānus zurück (Bruder oder Schwester von jemandem)."
+  },
+  {
+    "key": "sister",
+    "categories": ["noun.person.family"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "sister",
+        "genus": "F"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Schwester",
+        "genus": "F",
+        "plural": "Schwestern"
+      },
+      {
+        "language": "FR",
+        "lexeme": "sœur",
+        "genus": "F"
+      },
+      {
+        "language": "ES",
+        "lexeme": "hermana",
+        "genus": "F"
+      },
+      {
+        "language": "IT",
+        "lexeme": "sorella",
+        "genus": "F"
+      },
+      {
+        "language": "DA",
+        "lexeme": "søster",
+        "genus": "U"
+      },
+      {
+        "language": "LA",
+        "lexeme": "soror",
+        "genus": "F"
+      }
+    ],
+    "background": "Die germanischen Sprachen und die französische Form gehen mehr oder weniger stark auf die lateinische Form soror zurück (die germanischen Sprachen gehen auf das Protogermanische *swestēr zurück, es handelt sich jedoch auch um ein Kognat mit soror). Im Spanischen  wurde hingegen die männliche Form für die weibliche Form adaptiert (mit dem prägenden -a am Ende)."
+  },
+  {
+    "key": "son",
+    "categories": ["noun.person.family"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "son",
+        "genus": "M"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Sohn",
+        "genus": "M",
+        "plural": "Söhne"
+      },
+      {
+        "language": "FR",
+        "lexeme": "fils",
+        "genus": "M"
+      },
+      {
+        "language": "ES",
+        "lexeme": "hijo",
+        "genus": "M"
+      },
+      {
+        "language": "IT",
+        "lexeme": "figlio",
+        "genus": "M"
+      },
+      {
+        "language": "DA",
+        "lexeme": "søn",
+        "genus": "U"
+      },
+      {
+        "language": "LA",
+        "lexeme": "filius",
+        "genus": "M"
+      }
+    ],
+    "background": "In den germanischen Sprachen sind alle Wörter vom Protogermanischen sunuz abgeleitet, die romanischen Sprachen gehen auf das lateinische Filius zurück. Im Spanischen gab es einmal einen Übergang von fijo (Altspanisch) nach hijo."
+  },
+  {
+    "key": "daughter",
+    "categories": ["noun.person.family"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "daughter",
+        "genus": "F"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Tochter",
+        "genus": "F",
+        "plural": "Töchter"
+      },
+      {
+        "language": "FR",
+        "lexeme": "fille",
+        "genus": "F"
+      },
+      {
+        "language": "ES",
+        "lexeme": "hija",
+        "genus": "F"
+      },
+      {
+        "language": "IT",
+        "lexeme": "figlia",
+        "genus": "F"
+      },
+      {
+        "language": "DA",
+        "lexeme": "datter",
+        "genus": "U"
+      },
+      {
+        "language": "LA",
+        "lexeme": "filia",
+        "genus": "F"
+      }
+    ],
+    "background": "Die lateinische Form filia ist das Analog zum filius. Die romanischen Sprachen haben diese Analogie allesamt behalten. Die germanischen Sprachen gehen auf das Protogermanische duhtēr zurück."
+  },
+  {
+    "key": "grandfather",
+    "categories": ["noun.person.family"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "grandfather",
+        "genus": "M"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Großvater",
+        "genus": "M",
+        "plural": "Großväter"
+      },
+      {
+        "language": "FR",
+        "lexeme": "grand-père",
+        "genus": "M"
+      },
+      {
+        "language": "ES",
+        "lexeme": "abuelo",
+        "genus": "M"
+      },
+      {
+        "language": "IT",
+        "lexeme": "nonno",
+        "genus": "M"
+      },
+      {
+        "language": "DA",
+        "lexeme": "bedstefar",
+        "genus": "U"
+      },
+      {
+        "language": "LA",
+        "lexeme": "avus",
+        "genus": "M"
+      }
+    ],
+    "background": "In den Sprachen Englisch, Französisch und Deutsch wird das Wort durch Erweiterung von Vater mittels groß-gebildet. Im Dänischen geschieht es analog mit bedst (Superlativ von groß), sinngemäß damit größster/bester Vater. Das spanische Wort abuelo geht auf Altspanisch avuelo zurück, das auf das lateinische Wurde avuszurückgeht. Das italenische Wort geht hingegen auf lateinisch nonnus zurück (Mönch, Lehrer, alter Mann).\n"
+  },
+  {
+    "key": "grandmother",
+    "categories": ["noun.person.family"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "grandmother",
+        "genus": "F"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Großmutter",
+        "genus": "F",
+        "plural": "Großmütter"
+      },
+      {
+        "language": "FR",
+        "lexeme": "grand-mère",
+        "genus": "F"
+      },
+      {
+        "language": "ES",
+        "lexeme": "abuela",
+        "genus": "F"
+      },
+      {
+        "language": "IT",
+        "lexeme": "nonna",
+        "genus": "F"
+      },
+      {
+        "language": "DA",
+        "lexeme": "bedstemor",
+        "genus": "U"
+      },
+      {
+        "language": "LA",
+        "lexeme": "avia",
+        "genus": "F"
+      }
+    ],
+    "background": "Das Wort wird in allen Sprachen analog zum Großvater gebildet. "
+  },
+  {
+    "key": "grandpa",
+    "categories": ["noun.person.family"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "grandpa",
+        "genus": "M"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Opa",
+        "genus": "M",
+        "plural": "Opas"
+      },
+      {
+        "language": "FR",
+        "lexeme": "papi",
+        "genus": "M"
+      },
+      {
+        "language": "ES",
+        "lexeme": "abuelo",
+        "genus": "M"
+      },
+      {
+        "language": "IT",
+        "lexeme": "nonno",
+        "genus": "M"
+      },
+      {
+        "language": "DA",
+        "lexeme": "farfar",
+        "genus": "U",
+        "alternative": {
+          "lexeme": "morfar",
+          "genus": "U"
+        }
+      },
+      {
+        "language": "LA",
+        "lexeme": "avus",
+        "genus": "M"
+      }
+    ],
+    "background": "Nur ein Teil der Sprachen kennt einen Kosenamen für Großvater. Im Deutschen ist Opa eine Verkürzung für Großpapa, im Englischen wird die Koseform papa verkürzt, während das grand vollständig erhalten bleibt. Im Dänischen geschieht die Bildung über eine kreuzweise Zusammenstellung über die Wörter far und mor, je nachdem ob es der Opa (oder die Oma) väterlicher oder mütterlicher Seite ist (ähnlich wie im Chinesischen). Im Französischen geschieht die Bildung analog zu papa. Im Spanischen, Italienischen und Latein gibt es keine nennenswerte Form für einen Kosenamen."
+  },
+  {
+    "key": "grandma",
+    "categories": ["noun.person.family"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "grandma",
+        "genus": "F"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Oma",
+        "genus": "F",
+        "plural": "Oma"
+      },
+      {
+        "language": "FR",
+        "lexeme": "mamie",
+        "genus": "F"
+      },
+      {
+        "language": "ES",
+        "lexeme": "abuela",
+        "genus": "F"
+      },
+      {
+        "language": "IT",
+        "lexeme": "nonna",
+        "genus": "F"
+      },
+      {
+        "language": "DA",
+        "lexeme": "farmor",
+        "genus": "U",
+        "alternative": {
+          "lexeme": "mormor",
+          "genus": "U"
+        }
+      },
+      {
+        "language": "LA",
+        "lexeme": "avia",
+        "genus": "F"
+      }
+    ],
+    "background": "Das Wort wird in allen Sprachen analog zum Opa gebildet."
+  }

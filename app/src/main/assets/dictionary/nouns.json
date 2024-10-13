@@ -1,0 +1,367 @@
+[
+  {
+    "key": "house",
+    "categories": ["object.building.types"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "house"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Haus",
+        "genus": "N",
+        "plural": "Häuser"
+      },
+      {
+        "language": "FR",
+        "lexeme": "maison",
+        "genus": "F"
+      },
+      {
+        "language": "ES",
+        "lexeme": "casa",
+        "genus": "F"
+      },
+      {
+        "language": "DA",
+        "lexeme": "hus",
+        "genus": "N"
+      },
+      {
+        "language": "IT",
+        "lexeme": "casa",
+        "genus": "F"
+      },
+      {
+        "language": "LA",
+        "lexeme": "domus",
+        "genus": "F"
+      }
+    ]
+  },
+  {
+    "key": "school",
+    "categories": ["object.building.types"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "school"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Schule",
+        "genus": "F",
+        "plural": "Schulen"
+      },
+      {
+        "language": "FR",
+        "lexeme": "école",
+        "genus": "F"
+      },
+      {
+        "language": "ES",
+        "lexeme": "escuela",
+        "genus": "F"
+      },
+      {
+        "language": "DA",
+        "lexeme": "skole",
+        "genus": "U"
+      },
+      {
+        "language": "IT",
+        "lexeme": "scuola",
+        "genus": "F"
+      },
+      {
+        "language": "LA",
+        "lexeme": "schola",
+        "genus": "F"
+      }
+    ]
+  },
+  {
+    "key": "church",
+    "categories": ["object.building.types"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "church"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Kirche",
+        "genus": "F",
+        "plural": "Kirchen"
+      },
+      {
+        "language": "FR",
+        "lexeme": "église",
+        "genus": "F"
+      },
+      {
+        "language": "ES",
+        "lexeme": "iglesia",
+        "genus": "F"
+      },
+      {
+        "language": "DA",
+        "lexeme": "kirke",
+        "genus": "U"
+      },
+      {
+        "language": "IT",
+        "lexeme": "chiesa",
+        "genus": "F"
+      },
+      {
+        "language": "LA",
+        "lexeme": "ecclesia",
+        "genus": "F"
+      }
+    ]
+  },
+  {
+    "key": "hospital",
+    "categories": ["object.building.types"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "hospital"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Krankenhaus",
+        "genus": "N",
+        "plural": "Krankenhäuser"
+      },
+      {
+        "language": "FR",
+        "lexeme": "hôpital",
+        "genus": "M"
+      },
+      {
+        "language": "ES",
+        "lexeme": "hospital",
+        "genus": "M"
+      },
+      {
+        "language": "DA",
+        "lexeme": "sygehus",
+        "genus": "N",
+        "synonyms": [
+          {
+            "lexeme": "hospital",
+            "genus": "N"
+          }
+        ]
+      },
+      {
+        "language": "IT",
+        "lexeme": "ospedale",
+        "genus": "M"
+      },
+      {
+        "language": "LA",
+        "lexeme": "hospitale",
+        "altSpellings": ["hospitalis"],
+        "genus": "N"
+      }
+    ]
+  },
+  {
+    "key": "station",
+    "categories": ["object.building.types"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "station"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Bahnhof",
+        "genus": "M",
+        "plural": "Bahnhöfe"
+      },
+      {
+        "language": "FR",
+        "lexeme": "gare",
+        "genus": "F"
+      },
+      {
+        "language": "ES",
+        "lexeme": "estación",
+        "genus": "F"
+      },
+      {
+        "language": "DA",
+        "lexeme": "togstation",
+        "genus": "U"
+      },
+      {
+        "language": "IT",
+        "lexeme": "stazione",
+        "genus": "F"
+      }
+    ]
+  },
+  {
+    "key": "door",
+    "categories": ["object.building.interior"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "door"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Tür",
+        "genus": "F",
+        "plural": "Türen"
+      },
+      {
+        "language": "FR",
+        "lexeme": "porte",
+        "genus": "F"
+      },
+      {
+        "language": "ES",
+        "lexeme": "puerta",
+        "genus": "F"
+      },
+      {
+        "language": "DA",
+        "lexeme": "dør",
+        "genus": "U"
+      },
+      {
+        "language": "IT",
+        "lexeme": "porta",
+        "genus": "F"
+      },
+      {
+        "language": "LA",
+        "lexeme": "porta",
+        "genus": "F"
+      }
+    ]
+  },
+  {
+    "key": "window",
+    "categories": ["object.building.interior"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "window"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Fenster",
+        "genus": "N",
+        "plural": "Fenster"
+      },
+      {
+        "language": "FR",
+        "lexeme": "fenêtre",
+        "genus": "F"
+      },
+      {
+        "language": "ES",
+        "lexeme": "vendana",
+        "genus": "F"
+      },
+      {
+        "language": "DA",
+        "lexeme": "vindue",
+        "genus": "N"
+      },
+      {
+        "language": "IT",
+        "lexeme": "finestra",
+        "genus": "F"
+      },
+      {
+        "language": "LA",
+        "lexeme": "fenestra",
+        "genus": "F"
+      }
+    ]
+  },
+  {
+    "key": "room",
+    "categories": ["object.building.interior"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "room"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Zimmer",
+        "genus": "M",
+        "plural": "Zimmer",
+        "synonyms": [
+        	{
+         		"lexeme": "Raum",
+        		"genus": "N",
+        		"plural": "Räume"
+        	}
+        ]
+      },
+      {
+        "language": "FR",
+        "lexeme": "chambre",
+        "genus": "F",
+        "synonyms": [
+        	{
+         		"lexeme": "pièce",
+        		"genus": "F"
+        	}
+        ]
+      },
+      {
+        "language": "ES",
+        "lexeme": "habitación",
+        "genus": "F"
+      },
+      {
+        "language": "DA",
+        "lexeme": "værelse",
+        "genus": "N"
+      },
+      {
+        "language": "IT",
+        "lexeme": "camera",
+        "genus": "F",
+        "synonyms": [
+        	{
+         		"lexeme": "stanza",
+        		"genus": "F"
+        	}
+        ]
+      },
+      {
+        "language": "LA",
+        "lexeme": "conclave",
+        "genus": "N"
+      }
+    ]
+  }
+]
