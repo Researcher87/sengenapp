@@ -9,17 +9,14 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Map;
 
-import android.content.Context;
-
-import androidx.test.platform.app.InstrumentationRegistry;
-
-import com.example.sengen.sengen24.DictionaryManager;
-import com.example.sengen.sengen24.Language;
-import com.example.sengen.sengen24.config.FilePaths;
-import com.example.sengen.sengen24.config.generation.SenGenConfiguration;
-import com.example.sengen.sengen24.dictionary.wordclass.PolyglotDictionaryNoun;
-import com.example.sengen.sengen24.model.generation.NounPhraseGenerator;
-import com.example.sengen.sengen24.model.sentence.PolyglotSentence;
+import com.example.sengen.sengenmodel.dictionary.DictionaryManager;
+import com.example.sengen.sengenmodel.config.Language;
+import com.example.sengen.sengenmodel.config.FilePaths;
+import com.example.sengen.sengenmodel.config.generation.SenGenConfiguration;
+import com.example.sengen.sengenmodel.dictionary.wordclass.PolyglotDictionaryNoun;
+import com.example.sengen.sengenmodel.exception.InitializationException;
+import com.example.sengen.sengenmodel.generation.model.NounPhraseGenerator;
+import com.example.sengen.sengenmodel.generation.structure.sentence.PolyglotSentence;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -35,17 +32,17 @@ public class NounPhraseGeneratorTest {
     @BeforeClass
     public static void initialize() {
     	configuration = new SenGenConfiguration();
-    	
-        try {
-			String path = "./src/main/assets/" + FilePaths.FILE_DICT_NOUNS;
-			InputStream is = Files.newInputStream(Paths.get(path));
+
+		try {
+			String pathDictionary = "./src/main/assets/" + FilePaths.FILE_DICT_NOUNS;
+			String pathCategories = "./src/main/assets/" + FilePaths.FILE_DICT_CATEGORIES;
+			InputStream isDictionary = Files.newInputStream(Paths.get(pathDictionary));
+			InputStream isCategories = Files.newInputStream(Paths.get(pathCategories));
 			dictionaryManager = new DictionaryManager();
-			dictionaryManager.initializeDictionary(is);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+			dictionaryManager.initialize(isDictionary, isCategories);
+		} catch (InitializationException | IOException e) {
+			e.printStackTrace();
+		}
     }
     
 	@Test

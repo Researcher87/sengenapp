@@ -1,9 +1,10 @@
-package sengen24.dictionary;
+package com.example.sengen.sengenmodel.dictionary;
 
-import sengen24.dictionary.wordclass.PolyglotDictionaryNoun;
+import com.example.sengen.sengenmodel.dictionary.wordclass.PolyglotDictionaryNoun;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 /**
  * Container for all dictionaries (whole vocabulary).
@@ -33,7 +34,7 @@ public class Dictionary {
      */
     public List<PolyglotDictionaryNoun> getNouns(int minLevel, int maxLevel) {
         return nouns.stream().filter((noun) -> noun.getMilestone() >= minLevel && noun.getMilestone() <= maxLevel)
-                .cdl;
+                .collect(Collectors.toList());
     }
     
     /**

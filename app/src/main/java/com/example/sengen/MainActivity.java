@@ -1,29 +1,25 @@
 package com.example.sengen;
 
-import android.content.res.AssetManager;
+import static com.example.sengen.R.*;
+
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
-import com.example.sengen.sengen24.DictionaryManager;
-import com.example.sengen.sengen24.Language;
-import com.example.sengen.sengen24.config.FilePaths;
-import com.example.sengen.sengen24.config.generation.SenGenConfiguration;
-import com.example.sengen.sengen24.exception.NoWordMatchException;
-import com.example.sengen.sengen24.model.generation.NounPhraseGenerator;
-import com.example.sengen.sengen24.model.generation.SentenceGenerator;
-import com.example.sengen.sengen24.model.sentence.PolyglotSentence;
-import com.example.sengen.sengen24.model.sentence.Sentence;
+import com.example.sengen.sengenmodel.config.FilePaths;
+import com.example.sengen.sengenmodel.config.generation.SenGenConfiguration;
+import com.example.sengen.sengenmodel.dictionary.DictionaryManager;
+import com.example.sengen.sengenmodel.exception.InitializationException;
+import com.google.android.material.tabs.TabLayout;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 
 /**
@@ -35,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     private SenGenConfiguration configuration;
 
-    private PolyglotSentence generatedSentence;
+    TabLayout tabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,60 +39,86 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+        try {
+            initializeData();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+        tabLayout = findViewById(id.tabLayout);
+
+        loadMainView();
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        try {
-            InputStream is = getAssets().open(FilePaths.FILE_DICT_NOUNS);
-            dictionaryManager = new DictionaryManager();
-            dictionaryManager.initializeDictionary(is);
-            configuration = new SenGenConfiguration();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        // Set up TabLayout listener
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                int position = tab.getPosition();
+                if (position == 0) {
+                    loadMainView();
+                } else if (position == 1) {
+                    loadDictionaryView();
+                }
+            }
 
-        createMainMenu();
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+            }
+        });
 
     }
 
 
-    private void createMainMenu() {
-        Button buttonNew = findViewById(R.id.btn_new);
-        buttonNew.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                NounPhraseGenerator nounPhraseGenerator = new NounPhraseGenerator(configuration, dictionaryManager.getDictionary());
-                try {
-                    TextView sourceText = findViewById(R.id.textview_source);
-                    generatedSentence = nounPhraseGenerator.generateNounPhrase();
-                    sourceText.setText(generatedSentence.resolve().get(Language.DE));
-                } catch (NoWordMatchException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
+    private void initializeData() throws Exception {
+        try {
+            InputStream dictionaryInputStream = getAssets().open(FilePaths.FILE_DICT_NOUNS);
+            InputStream categoriesInputStream = getAssets().open(FilePaths.FILE_DICT_CATEGORIES);
+
+            dictionaryManager = new DictionaryManager();
+            dictionaryManager.initialize(dictionaryInputStream, categoriesInputStream);
+            configuration = new SenGenConfiguration();
+        } catch (InitializationException | IOException e) {
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
+            throw e;
+        }
+
+        if(dictionaryManager.getDictionary() == null || dictionaryManager.getDictionary().getNouns() == null
+                || dictionaryManager.getCategories() == null) {
+            Toast.makeText(this, "Dictionary or categories list does not contain any entries.",
+                    Toast.LENGTH_LONG).show();
+            throw new Exception("Error trying to load dictionary.");
+        } else {
+            try {
+                dictionaryManager.checkCategories();
+            } catch(InitializationException e) {
+                Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
+                throw new Exception("Error trying to load dictionary.");
             }
-        });
+        }
+    }
 
-        Button buttonSolve = findViewById(R.id.btn_solve);
-        buttonSolve.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                TextView solution1 = findViewById(R.id.textview_solution1);
-                solution1.setText(generatedSentence.resolve().get(Language.EN));
+    private void loadMainView() {
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.container, new SenGrenFragment(configuration, dictionaryManager));
+        ft.commit();
+    }
 
-                TextView solution2 = findViewById(R.id.textview_solution2);
-                solution2.setText(generatedSentence.resolve().get(Language.FR));
-
-                TextView solution3 = findViewById(R.id.textview_solution3);
-                solution3.setText(generatedSentence.resolve().get(Language.ES));
-
-                TextView solution4 = findViewById(R.id.textview_solution4);
-                solution4.setText(generatedSentence.resolve().get(Language.DA));
-            }
-        });
+    private void loadDictionaryView() {
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.container, new DictionaryFragment(configuration, dictionaryManager));
+        ft.commit();
     }
 
 }

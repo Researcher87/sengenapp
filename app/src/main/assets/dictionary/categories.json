@@ -1,0 +1,42 @@
+[
+    {
+      "category": "adjective.color",
+      "enabled": true,
+      "description": "Any color"
+    },
+    {
+      "category": "adjective.size",
+      "enabled": true,
+      "description": "A size describing an object"
+    },
+    {
+      "category": "noun.animal",
+      "enabled": true,
+      "description": "Any animal"
+    },
+    {
+      "category": "noun.object.building",
+      "enabled": true,
+      "description": "Nouns related to buildings"
+    },
+  {
+    "category": "noun.object.building.types",
+    "enabled": true,
+    "description": "Nouns related to different types of buildings, like house, school, church"
+  },
+  {
+    "category": "noun.object.building.interior",
+    "enabled": true,
+    "description": "Nouns related to the interior/parts of a house, like room, wall, roof"
+  },
+    {
+      "category": "noun.person.general",
+      "enabled": true,
+      "description": "Unspecific persons, like man, child, people"
+    },
+    {
+      "category": "noun.person.family",
+      "enabled": true,
+      "description": "Persons of a family (like daughter, aunt, parents)"
+    }
+  ]

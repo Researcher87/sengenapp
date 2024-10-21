@@ -1,7 +1,7 @@
 [
   {
     "key": "house",
-    "categories": ["object.building.types"],
+    "categories": ["noun.object.building.types"],
     "weight": 1,
     "milestone": 1,
     "translations": [
@@ -44,7 +44,7 @@
   },
   {
     "key": "school",
-    "categories": ["object.building.types"],
+    "categories": ["noun.object.building.types"],
     "weight": 1,
     "milestone": 1,
     "translations": [
@@ -87,7 +87,7 @@
   },
   {
     "key": "church",
-    "categories": ["object.building.types"],
+    "categories": ["noun.object.building.types"],
     "weight": 1,
     "milestone": 1,
     "translations": [
@@ -130,7 +130,7 @@
   },
   {
     "key": "hospital",
-    "categories": ["object.building.types"],
+    "categories": ["noun.object.building.types"],
     "weight": 1,
     "milestone": 1,
     "translations": [
@@ -180,7 +180,7 @@
   },
   {
     "key": "station",
-    "categories": ["object.building.types"],
+    "categories": ["noun.object.building.types"],
     "weight": 1,
     "milestone": 1,
     "translations": [
@@ -218,7 +218,7 @@
   },
   {
     "key": "door",
-    "categories": ["object.building.interior"],
+    "categories": ["noun.object.building.interior"],
     "weight": 1,
     "milestone": 1,
     "translations": [
@@ -261,7 +261,7 @@
   },
   {
     "key": "window",
-    "categories": ["object.building.interior"],
+    "categories": ["noun.object.building.interior"],
     "weight": 1,
     "milestone": 1,
     "translations": [
@@ -304,7 +304,7 @@
   },
   {
     "key": "room",
-    "categories": ["object.building.interior"],
+    "categories": ["noun.object.building.interior"],
     "weight": 1,
     "milestone": 1,
     "translations": [

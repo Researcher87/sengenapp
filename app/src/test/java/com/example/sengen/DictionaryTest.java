@@ -1,7 +1,6 @@
 package com.example.sengen;
 
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -13,17 +12,13 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import android.content.Context;
-
-import androidx.test.platform.app.InstrumentationRegistry;
-
-import com.example.sengen.sengen24.DictionaryManager;
-import com.example.sengen.sengen24.Language;
-import com.example.sengen.sengen24.config.FilePaths;
-import com.example.sengen.sengen24.dictionary.wordclass.AbstractWord;
-import com.example.sengen.sengen24.dictionary.wordclass.Noun;
-import com.example.sengen.sengen24.dictionary.wordclass.NounSynonym;
-import com.example.sengen.sengen24.dictionary.wordclass.PolyglotDictionaryNoun;
+import com.example.sengen.sengenmodel.dictionary.DictionaryManager;
+import com.example.sengen.sengenmodel.config.Language;
+import com.example.sengen.sengenmodel.config.FilePaths;
+import com.example.sengen.sengenmodel.dictionary.wordclass.AbstractWord;
+import com.example.sengen.sengenmodel.dictionary.wordclass.Noun;
+import com.example.sengen.sengenmodel.dictionary.wordclass.PolyglotDictionaryNoun;
+import com.example.sengen.sengenmodel.exception.InitializationException;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -38,11 +33,13 @@ public class DictionaryTest {
     @BeforeClass
     public static void initialize() {
         try {
-            String path = "./src/main/assets/" + FilePaths.FILE_DICT_NOUNS;
-            InputStream is = Files.newInputStream(Paths.get(path));
+            String pathDictionary = "./src/main/assets/" + FilePaths.FILE_DICT_NOUNS;
+            String pathCategories = "./src/main/assets/" + FilePaths.FILE_DICT_CATEGORIES;
+            InputStream isDictionary = Files.newInputStream(Paths.get(pathDictionary));
+            InputStream isCategories = Files.newInputStream(Paths.get(pathCategories));
             dictionaryManager = new DictionaryManager();
-            dictionaryManager.initializeDictionary(is);
-        } catch (IOException e) {
+            dictionaryManager.initialize(isDictionary, isCategories);
+        } catch (InitializationException | IOException e) {
             e.printStackTrace();
         }
     }
@@ -62,7 +59,7 @@ public class DictionaryTest {
         Optional<? extends AbstractWord> german = nounRoom.getTranslation(Language.DE);
         assertTrue(german.isPresent());
 
-        List<NounSynonym> synonymList = ((Noun) german.get()).getSynonyms();
+        List<Noun> synonymList = ((Noun) german.get()).getSynonyms();
         assertNotNull(synonymList);
         assertEquals(synonymList.size(), 1);
 
