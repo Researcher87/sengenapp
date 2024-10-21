@@ -8,7 +8,7 @@ import java.util.List;
  * Defines the languages that are supported.
  */
 public enum Language {
-    EN, DE, FR, ES, DA;
+    EN, DE, FR, ES, DA, LA;
 
     /**
      * Returns a language by its key.
@@ -22,6 +22,7 @@ public enum Language {
             case 2: return FR;
             case 3: return ES;
             case 4: return DA;
+            case 5: return LA;
             default: return DE;
         }
     }

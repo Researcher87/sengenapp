@@ -1,5 +1,230 @@
 [
   {
+    "key": "man",
+    "categories": ["noun.person.general"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "man"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Mann",
+        "genus": "M",
+        "plural": "Männer"
+      },
+      {
+        "language": "FR",
+        "lexeme": "homme",
+        "genus": "M"
+      },
+      {
+        "language": "ES",
+        "lexeme": "hombre",
+        "genus": "M"
+      },
+      {
+        "language": "DA",
+        "lexeme": "mand",
+        "genus": "M"
+      },
+      {
+        "language": "LA",
+        "lexeme": "vir",
+        "genus": "M"
+      }
+    ]
+  },
+  {
+    "key": "woman",
+    "categories": ["noun.person.general"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "woman"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Frau",
+        "genus": "F",
+        "plural": "Frauen"
+      },
+      {
+        "language": "FR",
+        "lexeme": "femme",
+        "genus": "F"
+      },
+      {
+        "language": "ES",
+        "lexeme": "mujer",
+        "genus": "F",
+        "synonyms": [
+          {
+            "lexeme": "donna",
+            "genus": "F"
+          }
+        ]
+      },
+      {
+        "language": "DA",
+        "lexeme": "kvinde",
+        "genus": "F"
+      },
+      {
+        "language": "LA",
+        "lexeme": "mulier",
+        "genus": "F",
+        "synonyms": [
+          {
+            "lexeme": "femina",
+            "genus": "F"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "child",
+    "categories": ["noun.person.general"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "child",
+        "plural": "children",
+        "synonyms": [
+          {
+            "lexeme": "kid"
+          }
+        ]
+      },
+      {
+        "language": "DE",
+        "lexeme": "Kind",
+        "genus": "N",
+        "plural": "Kinder"
+      },
+      {
+        "language": "FR",
+        "lexeme": "enfant",
+        "genus": "M"
+      },
+      {
+        "language": "ES",
+        "lexeme": "niño",
+        "genus": "M",
+        "synonyms": [
+          {
+            "lexeme": "niña",
+            "genus": "F"
+          }
+        ]
+      },
+      {
+        "language": "DA",
+        "lexeme": "barn",
+        "genus": "N"
+      },
+      {
+        "language": "LA",
+        "lexeme": "puer",
+        "genus": "M",
+        "synonyms": [
+          {
+            "lexeme": "puella",
+            "genus": "F"
+          },
+          {
+            "lexeme": "infans",
+            "genus": "m",
+            "remark": "young child"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "boy",
+    "categories": ["noun.person.general"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "boy"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Junge",
+        "genus": "M",
+        "plural": "Jungen"
+      },
+      {
+        "language": "FR",
+        "lexeme": "garçon",
+        "genus": "M"
+      },
+      {
+        "language": "ES",
+        "lexeme": "niño",
+        "genus": "M"
+      },
+      {
+        "language": "DA",
+        "lexeme": "dreng",
+        "genus": "M"
+      },
+      {
+        "language": "LA",
+        "lexeme": "puer",
+        "genus": "M"
+      }
+    ]
+  },
+  {
+    "key": "girl",
+    "categories": ["noun.person.general"],
+    "weight": 1,
+    "milestone": 1,
+    "translations": [
+      {
+        "language": "EN",
+        "lexeme": "girl"
+      },
+      {
+        "language": "DE",
+        "lexeme": "Mädchen",
+        "genus": "F",
+        "plural": "Mädchen"
+      },
+      {
+        "language": "FR",
+        "lexeme": "fille",
+        "genus": "F"
+      },
+      {
+        "language": "ES",
+        "lexeme": "niña",
+        "genus": "F"
+      },
+      {
+        "language": "DA",
+        "lexeme": "pige",
+        "genus": "F"
+      },
+      {
+        "language": "LA",
+        "lexeme": "puella",
+        "genus": "F"
+      }
+    ]
+  },
+  {
     "key": "house",
     "categories": ["noun.object.building.types"],
     "weight": 1,
@@ -29,11 +254,6 @@
         "language": "DA",
         "lexeme": "hus",
         "genus": "N"
-      },
-      {
-        "language": "IT",
-        "lexeme": "casa",
-        "genus": "F"
       },
       {
         "language": "LA",
@@ -74,11 +294,6 @@
         "genus": "U"
       },
       {
-        "language": "IT",
-        "lexeme": "scuola",
-        "genus": "F"
-      },
-      {
         "language": "LA",
         "lexeme": "schola",
         "genus": "F"
@@ -115,11 +330,6 @@
         "language": "DA",
         "lexeme": "kirke",
         "genus": "U"
-      },
-      {
-        "language": "IT",
-        "lexeme": "chiesa",
-        "genus": "F"
       },
       {
         "language": "LA",
@@ -166,11 +376,6 @@
         ]
       },
       {
-        "language": "IT",
-        "lexeme": "ospedale",
-        "genus": "M"
-      },
-      {
         "language": "LA",
         "lexeme": "hospitale",
         "altSpellings": ["hospitalis"],
@@ -208,11 +413,6 @@
         "language": "DA",
         "lexeme": "togstation",
         "genus": "U"
-      },
-      {
-        "language": "IT",
-        "lexeme": "stazione",
-        "genus": "F"
       }
     ]
   },
@@ -246,11 +446,6 @@
         "language": "DA",
         "lexeme": "dør",
         "genus": "U"
-      },
-      {
-        "language": "IT",
-        "lexeme": "porta",
-        "genus": "F"
       },
       {
         "language": "LA",
@@ -289,11 +484,6 @@
         "language": "DA",
         "lexeme": "vindue",
         "genus": "N"
-      },
-      {
-        "language": "IT",
-        "lexeme": "finestra",
-        "genus": "F"
       },
       {
         "language": "LA",
@@ -345,17 +535,6 @@
         "language": "DA",
         "lexeme": "værelse",
         "genus": "N"
-      },
-      {
-        "language": "IT",
-        "lexeme": "camera",
-        "genus": "F",
-        "synonyms": [
-        	{
-         		"lexeme": "stanza",
-        		"genus": "F"
-        	}
-        ]
       },
       {
         "language": "LA",
