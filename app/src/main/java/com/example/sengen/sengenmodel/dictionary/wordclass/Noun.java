@@ -29,4 +29,9 @@ public class Noun extends AbstractWord {
     public List<Noun> getSynonyms() {
         return synonyms;
     }
+
+    @Override
+    public String getDictionaryTranslation() {
+        return genus != null ? lexeme + " (" + genus + ")" : lexeme;
+    }
 }

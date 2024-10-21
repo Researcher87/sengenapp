@@ -27,6 +27,12 @@ public abstract class AbstractWord {
         return lexeme;
     }
 
+    /**
+     * Provides a to-string variant for the dictionary.
+     * @return A to-string variant of this word for a dictionary entry.
+     */
+    public abstract String getDictionaryTranslation();
+
     public String[] getAltSpellings() {
         return altSpellings;
     }

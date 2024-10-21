@@ -4,5 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="answer_wrong">#44FF0000</color>
     <color name="answer_correct">#4400FF00</color>
-    <color name="answer_blank">#FFCCCCCC</color>
+    <color name="answer_blank">#7DC2DE</color>
 </resources>
